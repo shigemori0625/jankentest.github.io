@@ -19,7 +19,7 @@ header a{
   height: 50px;
 }
 .background1{
-  background-image:url(../images/rule.gif);
+  background-image:url(rule.gif);
   position:absolute;
   top: 50px;
   left: 0;
@@ -29,7 +29,7 @@ header a{
   z-index: -10;
 }
 .background2{
-  background-image:url(../images/battle.jpg);
+  background-image:url(battle.jpg);
   position:absolute;
   background-size: cover;
   top: 50px;
