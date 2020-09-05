@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>battle</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+  <script type="text/javascript" language="javascript">
+    function onButtonClick() {
+      target = document.getElementById("output");
+      target.innerHTML = document.forms.form1.textBox1.value;
+      const hands = ["グー","チョキ","パー"];
+      const rand = Math.floor(Math.random()*3);
+      const hisHand = hands[rand];
+      const yourHand = document.getElementById("id_textBox1").value;
+      document.getElementById("result1").innerHTML = hisHand;
+
+      if(yourHand === "グー"　&& hisHand === hands[1]){
+        judge = "勝ち！";
+      }
+      else if(yourHand === "チョキ" && hisHand === hands[2]){
+        judge = "勝ち！";
+      }
+      else if(yourHand === "パー" && hishand === hands[0]){
+        judge = "勝ち！";
+      }
+      else if(yourHand === hisHand){
+        judge = "あいこ！";
+      }
+      else if(yourHand === "グー" && hisHand === hands[2]){
+        judge = "負け！どんまい！w";
+      }
+      else if(yourHand === "チョキ" && hisHand === hands[0]){
+        judge = "負け！どんまい！w";
+      }
+      else if(yourHand === "パー" && hisHand === hands[1]){
+        judge = "負け！どんまい！w";
+      }
+      else{
+        judge = "ちゃんと入力しろハゲ";
+      }
+      document.getElementById("result2").innerHTML = judge;
+    };
+  </script>
+  </head>
+  <body>
+    <header>
+      <div class = "header-left">
+        <a href = '/'>Jankenテストページ</a>
+      </div>
+    </header>
+    <div class = "background2"></div>
+    <div class ="battle-wrapper">
+      <h1>いざ！決闘！</h1>
+      <div class ="battlearea">
+      <p>出す手を入力してください</p>
+      <form name="form1" id="id_form1" action="">
+        <input name="textBox1" id="id_textBox1" class = "hand" type = "text" value="">
+        <input type = "button" value ="対決！" onclick="onButtonClick();">
+      </form>
+      </div>
+    <div class = "result">
+    <h2>結果...</h2>
+    <ul>
+    <li>あなたの手:</li>
+    <li id="output"></li>
+    </ul>
+    <ul>
+      <li>相手の手:</li>
+      <li id="result1"></li>
+    </ul>
+    <ul>
+      <li id="result2"></li>
+    </ul>
+  </div>
+    </div>
+  </body>
+</html>
