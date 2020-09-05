@@ -1,0 +1,98 @@
+*{
+  box-sizing:border-box;
+}
+header{
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  color: white;
+}
+header a{
+  color: white;
+  float: right;
+  display: inline-block;
+  padding: 10px 20px;
+}
+.header-left a{
+  float: left;
+  display: inline-block;
+  height: 50px;
+}
+.background1{
+  background-image:url(../images/rule.gif);
+  position:absolute;
+  top: 50px;
+  left: 0;
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+.background2{
+  background-image:url(../images/battle.jpg);
+  position:absolute;
+  background-size: cover;
+  top: 50px;
+  left: 0;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+}
+.title{
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  padding-top: 30px;
+}
+.container a{
+  color: black;
+  float:right;
+  display:inline-block;
+  margin-top: 30px;
+}
+.rule-contents a{
+  color: black;
+  float:right;
+  display:inline-block;
+  margin-top: 30px;
+}
+.next{
+  background-color: #c0c0c0;
+  padding: 10px 20px;
+}
+.btn{
+  border-radius: 4px;
+  box-shadow:0px 5px;
+}
+.btn:active{
+  position:relative;
+  top:5px;
+  box-shadow:none;
+}
+.rule-wrapper{
+  padding: 0px 20px;
+  margin:0 auto;
+}
+.rule-contents h1{
+  color: black;
+}
+.battle-wrapper{
+  padding: 0px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.battlearea{
+  display: inline-block;
+}
+.result{
+  padding-top:300px;
+  padding-left:500px;
+}
+.result li{
+  display:inline-block;
+  padding-right:100px;
+}
+ul{
+  list-style: none;
+}
